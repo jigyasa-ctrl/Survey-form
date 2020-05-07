@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <style>
+        #title{
+         text-align: center;
+        }
+        #description{
+            font-family: open-sans;
+            font-size:20px;
+            text-align: center
+        }
+        body{
+            background-attachment: fixed;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://getwallpapers.com/wallpaper/full/6/0/9/1018165-new-friends-tv-show-wallpapers-1920x1080.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            position: relative;
+            background-color: wheat;
+            height: 50%;
+            color: white;
+            font-family: oswald, sans-serif;
+            text-align: left;
+            font-size: 25px;
+            
+            
+        }
+            
+        #survey-form{
+            position: relative;
+            display:grid;
+            grid-template-columns:1fr 2fr 1fr;
+            grid-template-rows: 1fr;
+            justify-self:center;
+        }
+        input[type='text'], input[type='number'], input[type='email'], select[name='current role']{
+            width: 100%;
+            height: 28px;
+            border-radius: 5px;
+            background-color: rgb(241, 232, 232);
+            font-family:open-sans;
+            font-size:large;
+        }
+    #comments{
+        width: 100%;
+            height: 80px;
+            border-radius: 5px;
+            background-color:rgb(241, 232, 232);
+            font-family:open-sans;
+            font-size:large;
+            margin-top: 10px;
+
+    }
+    button{
+        width: 100%;
+            height: 45px;
+            border-radius: 5px;
+            background-color:  rgb(57, 129, 29);
+            font-family:open-sans;
+            font-size:large;
+            margin-top: 20px;
+            color:white;
+            
+    }
+        .formclass {
+            padding: 65px;
+        }
+        .class3{
+            width: 100%;
+        }
+        
+    </style>
+    
+        <body>
+ <h1 id='title'>FreeCodeCamp Survey Form</h1>
+ <p id='description'>Thank you for taking out time to help us improve the platform</p>
+ <section id='survey-form'>
+     <div></div>
+ <div >
+ <form class='formclass'>
+     
+     <label for='Name'><b>Name</b></label>
+     <input type='text' placeholder='Enter your name' name='name' required>
+    
+
+     <label for='email'><b>E-mail</b></label>
+     <input type='email' placeholder='Enter your E-mail' name='email' required>
+
+     <label for='age'><b>Age(optional)</b></label>
+     <input type='number' placeholder='Age' name='age'>
+
+     <label for='current role'><b>Which option best describes your current role?</b></label>
+     <select name='current role'>
+         <option value='student'>Student</option>
+         <option value='Full-time job'>Full time job</option>
+         <option value='learner'>Full time learner</option> 
+     </select>
+
+     <label><b>Would you recommend freecodecamp to friend?</b></label>
+
+     <div class='class3'>
+     <input type='radio' id='Definetly' name='recommendation'>
+     <label for='Definetly'>Definetly</label>
+     <input type='radio' id='maybe' name='recommendation'>
+     <label for='Maybe'>Maybe</label>
+     <input type='radio' id='Not sure' name='recommendation'>
+     <label for='Not sure'>Not sure</label>
+     </div>
+
+     <div>
+         <p><b>What would you like to improved?</b></p>
+         <input type='checkbox' id='Challenges' name='changes'><label for='Challenges'>Challenges</label>
+         <input type='checkbox' id='Projects' name='changes'><label for='Projects'>Projects</label>
+         <input type='checkbox' id='front-end-projects' name='changes'><label for='front-end-projects'>front end projects</label>
+     </div>
+
+     <label for='comments'><b>Any comments or suggestions?</b></label>
+     <textarea id='comments' placeholder='Write comments...' rows='6' cols='50'></textarea>
+
+     <button>Submit</button>
+
+     </form>
+     
+
+    
+ 
+ </form>
+</div>
+<div></div>
+
+</section>            
+        </body>
+    
+</html>
